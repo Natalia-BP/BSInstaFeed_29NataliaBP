@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/315133feff.js" crossorigin="anonymous"></script>
@@ -19,7 +21,7 @@
 
 <body>
 
-<!--Navbar-->
+    <!--Navbar-->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid justify-content-between">
             <a class="navbar-brand" href="#"><i class="fab fa-instagram mr-1"></i>Instagram</a>
@@ -28,14 +30,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a class="btn btn-success rounded text-white text-center my-2 my-sm-0 ml-auto p-2" type="button" data-toggle="modal"
+                <a class="btn btn-success rounded ml-md-auto" type="button" data-toggle="modal"
                     data-target="#textAreaModal">
                     Create a new post
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-center pl-3 pr-3" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-center pl-3 pr-3" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-cog"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -64,7 +66,7 @@
 
                     <div>
                         <button class="btn btn-light"><i class="fas fa-camera-retro"></i></button>
-                        <button class="btn btn-light"><i class="fas fa-map-marker-alt"></i></button> 
+                        <button class="btn btn-light"><i class="fas fa-map-marker-alt"></i></button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -78,58 +80,197 @@
     <!-- Botones -->
     <div class="container-md d-flex justify-content-center mt-3 mb-3">
         <div class="flex-row">
-            <button type="button" class="btn btn-light m-1"><a href="index.html" class="text-reset"><i class="fas fa-th"></i></a></button>
-            <button type="button" class="btn btn-light m-1"><a href="column.html" class="text-reset"><i class="fas fa-square"></i></a></button>
+            <button type="button" class="btn btn-light m-1"><a href="index.html" class="text-reset"><i
+                        class="fas fa-th"></i></a></button>
+            <button type="button" class="btn btn-light m-1"><a href="./column.html" class="text-reset"><i
+                        class="fas fa-square"></i></a></button>
         </div>
     </div>
 
+    <!-- Imgs -->
     <div class="container-fluid">
-        <div class="row d-flex justify-content-between mb-3">
-            <div class="col-md-4">
-                <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/dogs_1280p_0.jpg?itok=cnRk0HYq" class="img-fluid" alt="un perro viejo hechado en la calle mira a un cachorrito, los rodea la vegetación">
+        <!-- Fila 1 -->
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-4 my-2">
+                <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/dogs_1280p_0.jpg?itok=cnRk0HYq"
+                    class="img-fluid"
+                    alt="un perro viejo hechado en la calle mira a un cachorrito, los rodea la vegetación"
+                    data-toggle="modal" data-target="#imgModal">
+
+                <!-- Modal -->
+                <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header d-flex justify-content-between">
+                                <h5 class="modal-title" id="exampleModalLabel">My first photo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <img src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/dogs_1280p_0.jpg?itok=cnRk0HYq"
+                                    class="img-fluid mw-50">
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between align-items-center text-muted">
+                                <!-- Iconos izquierda -->
+                                <div class="icons">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <i class="far fa-heart"></i>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                            Comment...
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu derecha -->
+                                <div class="kebab">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Modal -->
             </div>
 
-            <div class="col-md-4">
-                <img src="https://thecatandthedog.com/wp-content/uploads/2020/11/105992231-1561667465295gettyimages-521697453.jpeg" class="img-fluid" alt="un cachorro corre por el zacate">
+            <div class="col-md-4 my-2">
+                <img src="https://thecatandthedog.com/wp-content/uploads/2020/11/105992231-1561667465295gettyimages-521697453.jpeg"
+                    class="img-fluid" data-toggle="modal" data-target="#imgModal2" alt="un cachorro corre por el zacate">
+
+                    <!-- Modal -->
+                <div class="modal fade" id="imgModal2" tabindex="-1" aria-labelledby="imgModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header d-flex justify-content-between">
+                                <h5 class="modal-title" id="exampleModalLabel">My Second Photo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <img src="https://thecatandthedog.com/wp-content/uploads/2020/11/105992231-1561667465295gettyimages-521697453.jpeg"
+                                    class="img-fluid mw-50">
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between align-items-center text-muted">
+                                <!-- Iconos izquierda -->
+                                <div class="icons">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <i class="far fa-heart"></i>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                            Comment...
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu derecha -->
+                                <div class="kebab">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Modal -->
             </div>
 
-            <div class="col-md-4">
-                <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2019/02/dog-451643.jpg?h=bf654dbc&itok=MQGvBmuo" class="img-fluid" alt="un cachorro acostado en el zacate en posición de juego">
+            <div class="col-md-4 my-2">
+                <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2019/02/dog-451643.jpg?h=bf654dbc&itok=MQGvBmuo"
+                    class="img-fluid" data-toggle="modal" data-target="#imgModal3" alt="un cachorro acostado en el zacate en posición de juego">
+
+                    <!-- Modal -->
+                <div class="modal fade" id="imgModal3" tabindex="-1" aria-labelledby="imgModal" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header d-flex justify-content-between">
+                                <h5 class="modal-title" id="exampleModalLabel">My Third Photo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2019/02/dog-451643.jpg?h=bf654dbc&itok=MQGvBmuo"
+                                    class="img-fluid mw-50">
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between align-items-center text-muted">
+                                <!-- Iconos izquierda -->
+                                <div class="icons">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <i class="far fa-heart"></i>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                            Comment...
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Menu derecha -->
+                                <div class="kebab">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Modal -->
             </div>
         </div>
 
-        <div class="row d-flex justify-content-between mb-3">
-            <div class="col-md-4">
-                <img src="https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg" class="img-fluid" alt="un gatito">
+        <!-- Fila 2 -->
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-4 my-2">
+                <img src="https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg"
+                    class="img-fluid" alt="un gatito">
             </div>
 
-            <div class="col-md-4">
-                <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" class="img-fluid" alt="un gato escondido detrás de una canasta">
+            <div class="col-md-4 my-2">
+                <img src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2"
+                    class="img-fluid" alt="un gato escondido detrás de una canasta">
             </div>
 
-            <div class="col-md-4">
-             <img src="https://static.theprint.in/wp-content/uploads/2020/04/Cat-representational-image-e1587622908176-696x391.jpg" class="img-fluid" alt="un gato de pelaje naranja ve a la cámara">
+            <div class="col-md-4 my-2">
+                <img src="https://static.theprint.in/wp-content/uploads/2020/04/Cat-representational-image-e1587622908176-696x391.jpg"
+                    class="img-fluid" alt="un gato de pelaje naranja ve a la cámara">
             </div>
         </div>
 
-        <div class="row d-flex justify-content-between mb-3">
-            <div class="col-md-4">
-                <img src="https://anypy.imgix.net/tour/bbq-snorkeling-paddleboarding-playa-flamingo-costa-rica/Beach-BBQ-A-1-jpg" class="img-fluid" alt="la playa">
+        <!-- Fila 3 -->
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-4 my-2">
+                <img src="https://anypy.imgix.net/tour/bbq-snorkeling-paddleboarding-playa-flamingo-costa-rica/Beach-BBQ-A-1-jpg"
+                    class="img-fluid" alt="la playa">
             </div>
 
-            <div class="col-md-4">
-                <img src="https://m.fourseasons.com/alt/img-opt/~70.1530.80,4444-0,0000-2839,1111-1597,0000/publish/content/dam/fourseasons/images/web/COS/COS_1113_original.jpg" class="img-fluid" alt="">
+            <div class="col-md-4 my-2">
+                <img src="https://m.fourseasons.com/alt/img-opt/~70.1530.80,4444-0,0000-2839,1111-1597,0000/publish/content/dam/fourseasons/images/web/COS/COS_1113_original.jpg"
+                    class="img-fluid" alt="">
             </div>
 
-            <div class="col-md-4">
-                <img src="https://goplaya.cr/blog/wp-content/uploads/2018/08/MUERTOSEDITADA1.jpg" class="img-fluid" alt="">
+            <div class="col-md-4 my-2">
+                <img src="https://goplaya.cr/blog/wp-content/uploads/2018/08/MUERTOSEDITADA1.jpg" class="img-fluid"
+                    alt="">
             </div>
         </div>
     </div>
+
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
